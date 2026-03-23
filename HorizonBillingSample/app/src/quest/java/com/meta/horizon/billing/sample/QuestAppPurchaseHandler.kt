@@ -199,16 +199,15 @@ class QuestAppPurchaseHandler : IBillingHandler {
       if (billingResult.responseCode != BillingClient.BillingResponseCode.OK) {
         failureCallback(billingResult.debugMessage)
       } else {
-        val result =
-            purchaseList.map { purchase ->
-              PurchaseEntryDetails(
-                  purchase.products[0],
-                  purchase.quantity,
-                  purchase.purchaseTime,
-                  purchase.purchaseToken,
-                  purchase.products[0].contains("consume"),
-              )
-            }
+        val result = purchaseList.map { purchase ->
+          PurchaseEntryDetails(
+              purchase.products[0],
+              purchase.quantity,
+              purchase.purchaseTime,
+              purchase.purchaseToken,
+              purchase.products[0].contains("consume"),
+          )
+        }
         successCallback(result)
       }
     }
