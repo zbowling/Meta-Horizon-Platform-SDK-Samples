@@ -27,3 +27,9 @@ Currently, we have the following sample(s):
 
 ## License
 The samples within this package are licensed under the [Meta Platform Technologies SDK License Agreement](LICENSE), as found in the LICENSE file.
+
+## AI coding agents
+
+This repo is wired up for AI coding agents — `AGENTS.md`, `.vscode/extensions.json`, `.mcp.json`, `.cursor/rules/`, and a few client-specific dotfiles surface the **Meta Horizon** VS Code/Cursor extension, the `hzdb` MCP server, and the Meta Quest skill set automatically.
+
+Full toolchain, including Android skills and per-client install instructions: [github.com/meta-quest/agentic-tools](https://github.com/meta-quest/agentic-tools).
